@@ -16,7 +16,7 @@
       const queue = [ tree ];
 
       while (queue.length) {
-        const node = queue.unshift();
+        const node = queue.shift();
         values.push(node.value);
 
         node.left && queue.push(node.left);
